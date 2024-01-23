@@ -1,0 +1,12 @@
+steps:
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args:
+      - 'run'
+      - 'deploy'
+      - 'hello-world'
+      - '--image'
+      - 'gcr.io/$PROJECT_ID/hello-world'
+      - '--platform'
+      - 'managed'
+      - '--region'
+      - 'us-central1'
